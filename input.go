@@ -1,7 +1,7 @@
 package nsq
 
 import (
-	"code.google.com/p/go-uuid/uuid"
+	"github.com/pborman/uuid"
 	"fmt"
 	"github.com/bitly/go-nsq"
 	"github.com/mozilla-services/heka/message"

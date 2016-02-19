@@ -278,7 +278,7 @@ func (output *NsqOutput) Run(runner pipeline.OutputRunner,
 					output.retryHelper.Reset()
 				}
 			}
-			pack.Recycle()
+	        	pack.Recycle(nil)
 		case msg, ok = <-output.retryChan:
 			if !ok {
 				return nil
